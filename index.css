@@ -5,10 +5,14 @@
 
 body {
     height: 100%;
-    -moz-user-select: none;/*火狐*/
-    -webkit-user-select: none;/*webkit浏览器*/
-    -ms-user-select: none; /*IE10*/
-    -khtml-user-select: none;/*早期浏览器*/
+    -moz-user-select: none;
+    /*火狐*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -ms-user-select: none;
+    /*IE10*/
+    -khtml-user-select: none;
+    /*早期浏览器*/
     user-select: none;
 }
 
@@ -20,9 +24,8 @@ body {
     align-items: center;
 }
 
-.list {
+.list, #bg {
     position: absolute;
-    cursor: url('images/hammer.ico'), default;
     padding: 2px;
     top: 0;
     bottom: 0;
@@ -31,9 +34,10 @@ body {
     margin: auto;
     width: 400px;
     height: 400px;
-    background: url('images/hole.jpg') no-repeat;
-    background-size: 400px 400px;
-    -moz-background-size: 400px 400px;
+}
+
+.list {
+    cursor: url('images/hammer.ico'), default;
 }
 
 .hamster {

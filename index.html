@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>欢乐打地鼠</title>
@@ -31,6 +32,8 @@
     </div>
 
     <!-- 九个地鼠洞 -->
+    
+    <img id="bg" src="images/hole.jpg" >
     <div class="list" id="item">
         <div class='hamster'>
             <div class="nei"><img id="image1" hidden src="images/hamster.png"></div>
@@ -217,7 +220,7 @@
 
         // 地鼠出现
         function doShow(randonNumber) {
-            var hamster = document.getElementsByTagName('img')[randonNumber - 1];
+            var hamster = document.getElementsByTagName('img')[randonNumber];
             hamster.style.animation = 'disper 0.5s';
             setTimeout(function () {
                 hamster.style.animation = 'hid 0.5s';
@@ -279,12 +282,18 @@
             }
 
         });
+<<<<<<< HEAD
+
+        
+        var injureHamster = new Image().src = 'images/injureHamster.png';
+=======
         
         new Image().src = 'images/injureHamster.png';
+>>>>>>> d74c671d09fd070d06c98bba87f7efd61d8e118e
         // 打中地鼠后让它变成一只受伤的地鼠
         function hid(id) {
             var img = document.getElementById(id);
-            img.src = 'images/injureHamster.png';
+            img.src = injureHamster;
             setTimeout(() => {
                 img.src = 'images/hamster.png';
             }, 200);
