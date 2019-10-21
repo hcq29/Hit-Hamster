@@ -95,6 +95,12 @@
         var timeNumber = (parseInt(changeTime.value) + 1) * 1000; //定时器在总时间+1秒后结束
         var totalTime = changeTime.value; //游戏初始总时间
 
+        var dragImage = document.getElementsByTagName('img');
+        for(var i = 0 ; i < dragImage.length ; i++){
+            dragImage[i].ondragstart = function(){
+                return false;
+            }
+        }
         // 事件集中器
         var EventUtil = {
             addHandler: function (element, type, handler) {
