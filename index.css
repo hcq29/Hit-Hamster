@@ -89,7 +89,7 @@ img {
 .hitCount,
 .countDown,
 .model {
-    width: 160px;
+    width: 180px;
     height: 60px;
     line-height: 60px;
     border-radius: 10px;
@@ -98,6 +98,10 @@ img {
     text-align: center;
     background: linear-gradient(rgb(84, 190, 42), rgb(17, 82, 23));
     background: -moz-linear-gradient(rgb(84, 190, 42), rgb(17, 82, 23));
+}
+
+.hitCount{
+    width: 120px;
 }
 
 #start {
@@ -115,7 +119,7 @@ img {
 }
 
 .model {
-    width: 250px;
+    width: 180px;
 }
 
 .model .checkGround {
